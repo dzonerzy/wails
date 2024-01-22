@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/wailsapp/wails/v3/internal/assetserver"
+	"github.com/wailsapp/wails/v3/internal/runtime"
 	"net/url"
 	"strconv"
 	"strings"
@@ -1487,6 +1488,9 @@ func (w *windowsWebviewWindow) flash(enabled bool) {
 }
 
 func (w *windowsWebviewWindow) navigationCompleted(sender *edge.ICoreWebView2, args *edge.ICoreWebView2NavigationCompletedEventArgs) {
+
+	// Install the runtime core
+	w.execJS(runtime.Core)
 
 	// Emit DomReady Event
 	windowEvents <- &windowEvent{EventID: uint(events.Windows.WebViewNavigationCompleted), WindowID: w.parent.id}

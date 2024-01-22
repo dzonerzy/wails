@@ -21,12 +21,12 @@ tasks:
   build:debug:
     internal: true
     cmds:
-      - npx esbuild@latest desktop/main.js --bundle --tree-shaking=true --sourcemap=inline --outfile=runtime_debug.js --define:DEBUG=true
+      - npx esbuild@latest desktop/core/main.js --bundle --tree-shaking=true --sourcemap=inline --outfile=runtime_core_debug.js --define:DEBUG=true
 
   build:production:
     internal: true
     cmds:
-      - npx esbuild@latest desktop/main.js --bundle --tree-shaking=true --minify --outfile=runtime.js --drop:console
+      - npx esbuild@latest desktop/core/main.js --bundle --tree-shaking=true --minify --outfile=runtime_core_prod.js --drop:console
 
   build:all:
     internal: true
