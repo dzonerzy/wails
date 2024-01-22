@@ -13,7 +13,6 @@ The electron alternative for Go
 import {newRuntimeCallerWithID, objectNames} from "./runtime";
 let call = newRuntimeCallerWithID(objectNames.System, '');
 const systemIsDarkMode = 0;
-const environment = 1;
 
 /**
  * @function
@@ -38,39 +37,12 @@ export async function Capabilities() {
 }
 
 /**
- * @typedef {object} EnvironmentInfo
- * @property {string} OS - The operating system in use.
- * @property {string} Arch - The architecture of the system.
- */
-
-/**
- * @function
- * Retrieves environment details.
- * @returns {Promise<EnvironmentInfo>} - A promise that resolves to an object containing OS and system architecture.
- */
-export function Environment() {
-    return call(environment);
-}
-
-export let invoke = null;
-let environmentCache = null;
-
-Environment()
-    .then(result => {
-        environmentCache = result;
-        invoke = IsWindows() ? window.chrome.webview.postMessage : window.webkit.messageHandlers.external.postMessage;
-    })
-    .catch(error => {
-        console.error(`Error getting Environment: ${error}`);
-    });
-
-/**
  * Checks if the current operating system is Windows.
  *
  * @return {boolean} True if the operating system is Windows, otherwise false.
  */
 export function IsWindows() {
-    return environmentCache.OS === "windows";
+    return window._wails.environment.OS === "windows";
 }
 
 /**
@@ -79,7 +51,7 @@ export function IsWindows() {
  * @returns {boolean} Returns true if the current operating system is Linux, false otherwise.
  */
 export function IsLinux() {
-    return environmentCache.OS === "linux";
+    return window._wails.environment.OS === "linux";
 }
 
 /**
@@ -88,7 +60,7 @@ export function IsLinux() {
  * @returns {boolean} True if the environment is macOS, false otherwise.
  */
 export function IsMac() {
-    return environmentCache.OS === "darwin";
+    return window._wails.environment.OS === "darwin";
 }
 
 /**
@@ -96,7 +68,7 @@ export function IsMac() {
  * @returns {boolean} True if the current environment architecture is AMD64, false otherwise.
  */
 export function IsAMD64() {
-    return environmentCache.Arch === "amd64";
+    return window._wails.environment.Arch === "amd64";
 }
 
 /**
@@ -105,7 +77,7 @@ export function IsAMD64() {
  * @returns {boolean} True if the current architecture is ARM, false otherwise.
  */
 export function IsARM() {
-    return environmentCache.Arch === "arm";
+    return window._wails.environment.Arch === "arm";
 }
 
 /**
@@ -114,9 +86,14 @@ export function IsARM() {
  * @returns {boolean} - Returns true if the environment is ARM64 architecture, otherwise returns false.
  */
 export function IsARM64() {
-    return environmentCache.Arch === "arm64";
+    return window._wails.environment.Arch === "arm64";
 }
 
+/**
+ * Checks if the application is running in debug mode.
+ *
+ * @returns {boolean} True if the application is running in debug mode, otherwise false.
+ */
 export function IsDebug() {
-    return environmentCache.Debug === true;
+    return window._wails.environment.Debug === true;
 }

@@ -2,7 +2,16 @@
 
 package runtime
 
-import _ "embed"
+import (
+	_ "embed"
+	"fmt"
+	"runtime"
+)
 
 //go:embed runtime_core_debug.js
-var Core string
+var core string
+
+func Core() string {
+	env := fmt.Sprintf(`window._wails=window._wails||{};window._wails.environment={"OS":"%s","Arch":"%s","Debug":true};`, runtime.GOOS, runtime.GOARCH)
+	return invoke() + env + core
+}

@@ -10,7 +10,7 @@ The electron alternative for Go
 
 /* jshint esversion: 9 */
 
-import {invoke, IsWindows} from "./system";
+import {IsWindows} from "./system";
 import {GetFlag} from "./flags";
 
 let shouldDrag = false;
@@ -46,7 +46,7 @@ export function endDrag() {
 
 function testResize() {
     if( resizeEdge ) {
-        invoke(`resize:${resizeEdge}`);
+        window._wails.invoke(`resize:${resizeEdge}`);
         return true
     }
     return false;
@@ -85,7 +85,7 @@ function onMouseMove(e) {
 function checkDrag(e) {
     let mousePressed = e.buttons !== undefined ? e.buttons : e.which;
     if(shouldDrag && mousePressed > 0) {
-        invoke("drag");
+        window._wails.invoke("drag");
         return false;
     }
     return shouldDrag;
