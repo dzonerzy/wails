@@ -1,4 +1,4 @@
-//go:build darwins
+//go:build darwin
 
 package runtime
 
@@ -7,5 +7,5 @@ import (
 )
 
 func invoke() string {
-	return `window._wails=window._wails||{};window._wails.invoke=window.webkit.messageHandlers.external.postMessage;`
+	return `window._wails=window._wails||{};window._wails.invoke=function(msg){window.webkit.messageHandlers.external.postMessage(msg);};`
 }
