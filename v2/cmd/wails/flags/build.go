@@ -7,10 +7,10 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/dzonerzy/wails/v2/internal/system"
+	"github.com/dzonerzy/wails/v2/pkg/commands/build"
+	"github.com/dzonerzy/wails/v2/pkg/commands/buildtags"
 	"github.com/leaanthony/slicer"
-	"github.com/wailsapp/wails/v2/internal/system"
-	"github.com/wailsapp/wails/v2/pkg/commands/build"
-	"github.com/wailsapp/wails/v2/pkg/commands/buildtags"
 )
 
 const (

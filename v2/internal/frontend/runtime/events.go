@@ -3,8 +3,8 @@ package runtime
 import (
 	"sync"
 
+	"github.com/dzonerzy/wails/v2/internal/frontend"
 	"github.com/samber/lo"
-	"github.com/wailsapp/wails/v2/internal/frontend"
 )
 
 type Logger interface {

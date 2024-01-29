@@ -3,7 +3,7 @@ package logutils
 import (
 	"fmt"
 
-	"github.com/wailsapp/wails/v2/internal/colour"
+	"github.com/dzonerzy/wails/v2/internal/colour"
 )
 
 func LogGreen(message string, args ...interface{}) {

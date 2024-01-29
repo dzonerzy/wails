@@ -6,16 +6,16 @@
   Build desktop applications using Go & Web Technologies.
   <br/>
   <br/>
-  <a href="https://github.com/wailsapp/wails/blob/master/LICENSE">
-    <img alt="GitHub" src="https://img.shields.io/github/license/wailsapp/wails"/>
+  <a href="https://github.com/dzonerzy/wails/blob/master/LICENSE">
+    <img alt="GitHub" src="https://img.shields.io/github/license/dzonerzy/wails"/>
   </a>
-  <a href="https://goreportcard.com/report/github.com/wailsapp/wails">
-    <img src="https://goreportcard.com/badge/github.com/wailsapp/wails" />
+  <a href="https://goreportcard.com/report/github.com/dzonerzy/wails">
+    <img src="https://goreportcard.com/badge/github.com/dzonerzy/wails" />
   </a>
-  <a href="https://pkg.go.dev/github.com/wailsapp/wails">
-    <img src="https://pkg.go.dev/badge/github.com/wailsapp/wails.svg" alt="Go Reference"/>
+  <a href="https://pkg.go.dev/github.com/dzonerzy/wails">
+    <img src="https://pkg.go.dev/badge/github.com/dzonerzy/wails.svg" alt="Go Reference"/>
   </a>
-  <a href="https://github.com/wailsapp/wails/issues">
+  <a href="https://github.com/dzonerzy/wails/issues">
     <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="CodeFactor" />
   </a>
   <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fwailsapp%2Fwails?ref=badge_shield" alt="FOSSA Status">
@@ -25,11 +25,11 @@
     <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome" />
   </a>
   <br/>
-  <a href="https://github.com/wailsapp/wails/actions/workflows/build.yml" rel="nofollow">
-    <img src="https://img.shields.io/github/workflow/status/wailsapp/wails/Build?logo=github" alt="Build" />
+  <a href="https://github.com/dzonerzy/wails/actions/workflows/build.yml" rel="nofollow">
+    <img src="https://img.shields.io/github/workflow/status/dzonerzy/wails/Build?logo=github" alt="Build" />
   </a>
-  <a href="https://github.com/wailsapp/wails/tags" rel="nofollow">
-    <img alt="GitHub tag (latest SemVer pre-release)" src="https://img.shields.io/github/v/tag/wailsapp/wails?include_prereleases&label=version"/>
+  <a href="https://github.com/dzonerzy/wails/tags" rel="nofollow">
+    <img alt="GitHub tag (latest SemVer pre-release)" src="https://img.shields.io/github/v/tag/dzonerzy/wails?include_prereleases&label=version"/>
   </a>
 </p>
 
@@ -83,7 +83,7 @@ make this easy for you by handling project creation, compilation and bundling. A
 
 ### Roadmap
 
-The project roadmap may be found [here](https://github.com/wailsapp/wails/discussions/1484). Please consult
+The project roadmap may be found [here](https://github.com/dzonerzy/wails/discussions/1484). Please consult
 this before open up an enhancement request.
 
 ## Sponsors
@@ -208,7 +208,7 @@ The installation instructions are on the [official website](https://wails.io/doc
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/wailsapp/wails.svg)](https://starchart.cc/wailsapp/wails)
+[![Stargazers over time](https://starchart.cc/dzonerzy/wails.svg)](https://starchart.cc/dzonerzy/wails)
 
 ## Contributors
 

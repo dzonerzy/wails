@@ -3,9 +3,9 @@
 package wails
 
 import (
-	_ "github.com/wailsapp/wails/v2/internal/goversion" // Add Compile-Time version check for minimum go version
-	"github.com/wailsapp/wails/v2/pkg/application"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	_ "github.com/dzonerzy/wails/v2/internal/goversion" // Add Compile-Time version check for minimum go version
+	"github.com/dzonerzy/wails/v2/pkg/application"
+	"github.com/dzonerzy/wails/v2/pkg/options"
 )
 
 // Run creates an application based on the given config and executes it

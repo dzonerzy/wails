@@ -7,16 +7,16 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/dzonerzy/wails/v2/internal/project"
 	"github.com/leaanthony/winicon"
 	"github.com/tc-hib/winres"
 	"github.com/tc-hib/winres/version"
-	"github.com/wailsapp/wails/v2/internal/project"
 
+	"github.com/dzonerzy/wails/v2/pkg/buildassets"
 	"github.com/jackmordaunt/icns"
 	"github.com/pkg/errors"
-	"github.com/wailsapp/wails/v2/pkg/buildassets"
 
-	"github.com/wailsapp/wails/v2/internal/fs"
+	"github.com/dzonerzy/wails/v2/internal/fs"
 )
 
 // PackageProject packages the application

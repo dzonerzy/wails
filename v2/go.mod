@@ -1,4 +1,4 @@
-module github.com/wailsapp/wails/v2
+module github.com/dzonerzy/wails/v2
 
 go 1.20
 

@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"text/template"
 
+	"github.com/dzonerzy/wails/v2/internal/fs"
+	"github.com/dzonerzy/wails/v2/internal/project"
 	"github.com/leaanthony/gosod"
 	"github.com/samber/lo"
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/internal/project"
 )
 
 //go:embed build

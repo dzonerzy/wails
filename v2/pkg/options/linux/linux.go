@@ -29,7 +29,7 @@ type Options struct {
 	//   - WebviewGpuPolicyOnDemand
 	//   - WebviewGpuPolicyNever
 	//
-	// Due to https://github.com/wailsapp/wails/issues/2977, if options.Linux is nil
+	// Due to https://github.com/dzonerzy/wails/issues/2977, if options.Linux is nil
 	// in the call to wails.Run(), WebviewGpuPolicy is set by default to WebviewGpuPolicyNever.
 	// Client code may override this behavior by passing a non-nil Options and set
 	// WebviewGpuPolicy as needed.

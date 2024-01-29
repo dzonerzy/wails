@@ -3,7 +3,7 @@
 package menu
 
 import (
-	"github.com/wailsapp/wails/v2/pkg/menu"
+	"github.com/dzonerzy/wails/v2/pkg/menu"
 )
 
 // MenuManager manages the menus for the application

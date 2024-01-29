@@ -3,9 +3,9 @@ package binding
 import (
 	"testing"
 
+	"github.com/dzonerzy/wails/v2/internal/logger"
 	"github.com/leaanthony/slicer"
 	"github.com/stretchr/testify/assert"
-	"github.com/wailsapp/wails/v2/internal/logger"
 )
 
 type BindForTest struct {

@@ -1,11 +1,11 @@
 package main
 
 import (
+	"github.com/dzonerzy/wails/v2/cmd/wails/flags"
+	"github.com/dzonerzy/wails/v2/cmd/wails/internal"
+	"github.com/dzonerzy/wails/v2/internal/colour"
+	"github.com/dzonerzy/wails/v2/internal/github"
 	"github.com/pterm/pterm"
-	"github.com/wailsapp/wails/v2/cmd/wails/flags"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal"
-	"github.com/wailsapp/wails/v2/internal/colour"
-	"github.com/wailsapp/wails/v2/internal/github"
 )
 
 func showReleaseNotes(f *flags.ShowReleaseNotes) error {

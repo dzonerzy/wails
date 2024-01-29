@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"runtime"
 
+	"github.com/dzonerzy/wails/v2/internal/project"
+	"github.com/dzonerzy/wails/v2/pkg/commands/build"
 	"github.com/samber/lo"
-	"github.com/wailsapp/wails/v2/internal/project"
-	"github.com/wailsapp/wails/v2/pkg/commands/build"
 )
 
 type Dev struct {

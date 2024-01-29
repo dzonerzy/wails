@@ -1,6 +1,6 @@
 package menu
 
-import "github.com/wailsapp/wails/v2/pkg/menu/keys"
+import "github.com/dzonerzy/wails/v2/pkg/menu/keys"
 
 type Menu struct {
 	Items []*MenuItem

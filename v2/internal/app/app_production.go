@@ -5,13 +5,13 @@ package app
 import (
 	"context"
 
-	"github.com/wailsapp/wails/v2/internal/binding"
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop"
-	"github.com/wailsapp/wails/v2/internal/frontend/dispatcher"
-	"github.com/wailsapp/wails/v2/internal/frontend/runtime"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	"github.com/wailsapp/wails/v2/internal/menumanager"
-	"github.com/wailsapp/wails/v2/pkg/options"
+	"github.com/dzonerzy/wails/v2/internal/binding"
+	"github.com/dzonerzy/wails/v2/internal/frontend/desktop"
+	"github.com/dzonerzy/wails/v2/internal/frontend/dispatcher"
+	"github.com/dzonerzy/wails/v2/internal/frontend/runtime"
+	"github.com/dzonerzy/wails/v2/internal/logger"
+	"github.com/dzonerzy/wails/v2/internal/menumanager"
+	"github.com/dzonerzy/wails/v2/pkg/options"
 )
 
 func (a *App) Run() error {

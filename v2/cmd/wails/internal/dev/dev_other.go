@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"syscall"
 
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/logutils"
+	"github.com/dzonerzy/wails/v2/cmd/wails/internal/logutils"
 	"golang.org/x/sys/unix"
 )
 

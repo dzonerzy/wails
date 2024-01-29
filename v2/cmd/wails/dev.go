@@ -3,11 +3,11 @@ package main
 import (
 	"os"
 
+	"github.com/dzonerzy/wails/v2/cmd/wails/flags"
+	"github.com/dzonerzy/wails/v2/cmd/wails/internal/dev"
+	"github.com/dzonerzy/wails/v2/internal/colour"
+	"github.com/dzonerzy/wails/v2/pkg/clilogger"
 	"github.com/pterm/pterm"
-	"github.com/wailsapp/wails/v2/cmd/wails/flags"
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/dev"
-	"github.com/wailsapp/wails/v2/internal/colour"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
 )
 
 func devApplication(f *flags.Dev) error {

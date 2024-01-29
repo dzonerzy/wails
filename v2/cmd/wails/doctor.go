@@ -9,11 +9,11 @@ import (
 
 	"github.com/pterm/pterm"
 
+	"github.com/dzonerzy/wails/v2/cmd/wails/flags"
+	"github.com/dzonerzy/wails/v2/internal/colour"
+	"github.com/dzonerzy/wails/v2/internal/system"
+	"github.com/dzonerzy/wails/v2/internal/system/packagemanager"
 	"github.com/jaypipes/ghw"
-	"github.com/wailsapp/wails/v2/cmd/wails/flags"
-	"github.com/wailsapp/wails/v2/internal/colour"
-	"github.com/wailsapp/wails/v2/internal/system"
-	"github.com/wailsapp/wails/v2/internal/system/packagemanager"
 )
 
 func diagnoseEnvironment(f *flags.Doctor) error {

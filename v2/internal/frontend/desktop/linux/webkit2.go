@@ -10,10 +10,10 @@ import "C"
 import (
 	"fmt"
 
-	"github.com/wailsapp/wails/v2/pkg/options"
-	"github.com/wailsapp/wails/v2/pkg/options/linux"
+	"github.com/dzonerzy/wails/v2/pkg/options"
+	"github.com/dzonerzy/wails/v2/pkg/options/linux"
 
-	"github.com/wailsapp/wails/v2/pkg/assetserver/webview"
+	"github.com/dzonerzy/wails/v2/pkg/assetserver/webview"
 )
 
 func validateWebKit2Version(options *options.App) {

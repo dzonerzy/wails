@@ -5,8 +5,8 @@ import (
 	"log"
 	goruntime "runtime"
 
-	"github.com/wailsapp/wails/v2/internal/frontend"
-	"github.com/wailsapp/wails/v2/internal/logger"
+	"github.com/dzonerzy/wails/v2/internal/frontend"
+	"github.com/dzonerzy/wails/v2/internal/logger"
 )
 
 const contextError = `An invalid context was passed. This method requires the specific context given in the lifecycle hooks:

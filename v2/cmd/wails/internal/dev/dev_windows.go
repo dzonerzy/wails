@@ -8,7 +8,7 @@ import (
 	"os/exec"
 	"strconv"
 
-	"github.com/wailsapp/wails/v2/cmd/wails/internal/logutils"
+	"github.com/dzonerzy/wails/v2/cmd/wails/internal/logutils"
 )
 
 func setParentGID(_ *exec.Cmd) {}

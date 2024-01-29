@@ -15,10 +15,10 @@ import (
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/pkg/errors"
 
+	"github.com/dzonerzy/wails/v2/internal/fs"
+	"github.com/dzonerzy/wails/v2/pkg/clilogger"
 	"github.com/leaanthony/debme"
 	"github.com/leaanthony/gosod"
-	"github.com/wailsapp/wails/v2/internal/fs"
-	"github.com/wailsapp/wails/v2/pkg/clilogger"
 )
 
 //go:embed all:templates

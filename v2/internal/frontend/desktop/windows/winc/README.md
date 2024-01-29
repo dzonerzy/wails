@@ -1,7 +1,7 @@
 # winc
 
 ** This is a fork of [tadvi/winc](https://github.com/tadvi/winc) for the sole purpose of integration
-with [Wails](https://github.com/wailsapp/wails). This repository comes with ***no support*** **
+with [Wails](https://github.com/dzonerzy/wails). This repository comes with ***no support*** **
 
 Common library for Go GUI apps on Windows. It is for Windows OS only. This makes library smaller than some other UI
 libraries for Go.
@@ -46,7 +46,7 @@ Best way to learn how to use the library is to look at the included **examples**
 1. Make sure you have a working Go installation and build environment, see more for details on page below.
    http://golang.org/doc/install
 
-2. go get github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc
+2. go get github.com/dzonerzy/wails/v2/internal/frontend/desktop/windows/winc
 
 ## Icons
 
@@ -108,7 +108,7 @@ coordinates. This works fine for dialog screens up to 10-14 controls.
 package main
 
 import (
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc"
+	"github.com/dzonerzy/wails/v2/internal/frontend/desktop/windows/winc"
 )
 
 func main() {
@@ -160,7 +160,7 @@ usually due to string UTF8 and UTF16 conversions. But there are other types of c
 
 When developing your own controls you might also need to:
 
-	import "github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc/w32"
+	import "github.com/dzonerzy/wails/v2/internal/frontend/desktop/windows/winc/w32"
 
 w32 has Win32 API low level constants and functions.
 

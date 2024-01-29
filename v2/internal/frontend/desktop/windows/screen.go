@@ -8,9 +8,9 @@ import (
 	"syscall"
 	"unsafe"
 
+	"github.com/dzonerzy/wails/v2/internal/frontend/desktop/windows/winc"
+	"github.com/dzonerzy/wails/v2/internal/frontend/desktop/windows/winc/w32"
 	"github.com/pkg/errors"
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc"
-	"github.com/wailsapp/wails/v2/internal/frontend/desktop/windows/winc/w32"
 )
 
 func MonitorsEqual(first w32.MONITORINFO, second w32.MONITORINFO) bool {

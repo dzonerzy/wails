@@ -1,9 +1,9 @@
 package dispatcher
 
 import (
+	"github.com/dzonerzy/wails/v2/internal/logger"
+	pkgLogger "github.com/dzonerzy/wails/v2/pkg/logger"
 	"github.com/pkg/errors"
-	"github.com/wailsapp/wails/v2/internal/logger"
-	pkgLogger "github.com/wailsapp/wails/v2/pkg/logger"
 )
 
 var logLevelMap = map[byte]logger.LogLevel{

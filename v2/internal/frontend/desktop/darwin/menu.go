@@ -17,8 +17,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/wailsapp/wails/v2/pkg/menu"
-	"github.com/wailsapp/wails/v2/pkg/menu/keys"
+	"github.com/dzonerzy/wails/v2/pkg/menu"
+	"github.com/dzonerzy/wails/v2/pkg/menu/keys"
 )
 
 type NSMenu struct {

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/pkg/runtime"
+	"github.com/dzonerzy/wails/v2/pkg/runtime"
 
-	"github.com/wailsapp/wails/v2/internal/frontend"
+	"github.com/dzonerzy/wails/v2/internal/frontend"
 )
 
 const systemCallPrefix = ":wails:"

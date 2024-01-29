@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/wailsapp/wails/v2/internal/shell"
+	"github.com/dzonerzy/wails/v2/internal/shell"
 )
 
 // Eopkg represents the Eopkg manager

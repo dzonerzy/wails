@@ -10,7 +10,7 @@ import (
 	"net/http/httputil"
 	"net/url"
 
-	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
+	"github.com/dzonerzy/wails/v2/pkg/options/assetserver"
 )
 
 func NewExternalAssetsHandler(logger Logger, options assetserver.Options, url *url.URL) http.Handler {

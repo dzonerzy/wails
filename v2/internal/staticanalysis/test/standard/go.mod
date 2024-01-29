@@ -2,7 +2,7 @@ module changeme
 
 go 1.18
 
-require github.com/wailsapp/wails/v2 v2.3.1
+require github.com/dzonerzy/wails/v2 v2.3.1
 
 require (
 	github.com/bep/debounce v1.2.1 // indirect
@@ -32,4 +32,4 @@ require (
 	golang.org/x/text v0.13.0 // indirect
 )
 
-// replace github.com/wailsapp/wails/v2 v2.0.0 => C:\Users\leaan
+// replace github.com/dzonerzy/wails/v2 v2.0.0 => C:\Users\leaan

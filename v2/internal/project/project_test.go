@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/dzonerzy/wails/v2/internal/project"
 	"github.com/samber/lo"
-	"github.com/wailsapp/wails/v2/internal/project"
 )
 
 func TestProject_GetFrontendDir(t *testing.T) {

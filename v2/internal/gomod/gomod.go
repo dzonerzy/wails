@@ -21,7 +21,7 @@ func GetWailsVersionFromModFile(goModText []byte) (*semver.Version, error) {
 		if !req.Syntax.InBlock {
 			tokenPosition = 1
 		}
-		if req.Syntax.Token[tokenPosition] == "github.com/wailsapp/wails/v2" {
+		if req.Syntax.Token[tokenPosition] == "github.com/dzonerzy/wails/v2" {
 			version := req.Syntax.Token[tokenPosition+1]
 			return semver.NewVersion(version)
 		}
@@ -53,7 +53,7 @@ func UpdateGoModVersion(goModText []byte, currentVersion string) ([]byte, error)
 		return nil, err
 	}
 
-	err = file.AddRequire("github.com/wailsapp/wails/v2", currentVersion)
+	err = file.AddRequire("github.com/dzonerzy/wails/v2", currentVersion)
 	if err != nil {
 		return nil, err
 	}
@@ -71,7 +71,7 @@ func UpdateGoModVersion(goModText []byte, currentVersion string) ([]byte, error)
 		if !req.Syntax.InBlock {
 			tokenPosition = 1
 		}
-		if req.Syntax.Token[tokenPosition] == "github.com/wailsapp/wails/v2" {
+		if req.Syntax.Token[tokenPosition] == "github.com/dzonerzy/wails/v2" {
 			version := req.Syntax.Token[tokenPosition+1]
 			_, err := semver.NewVersion(version)
 			if err == nil {

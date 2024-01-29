@@ -2,7 +2,7 @@ module changeme
 
         go 1.18
 
-        require github.com/wailsapp/wails/v2 {{.WailsVersion}}
+        require github.com/dzonerzy/wails/v2 {{.WailsVersion}}
 
         require (
         github.com/go-ole/go-ole v1.2.6 // indirect
@@ -29,4 +29,4 @@ module changeme
         golang.org/x/text v0.3.7 // indirect
         )
 
-        // replace github.com/wailsapp/wails/v2 {{.WailsVersion}} => {{.WailsDirectory}}
+        // replace github.com/dzonerzy/wails/v2 {{.WailsVersion}} => {{.WailsDirectory}}
