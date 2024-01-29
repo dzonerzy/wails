@@ -1,6 +1,8 @@
 module github.com/dzonerzy/wails/v2
 
-go 1.20
+go 1.21
+
+toolchain go1.21.5
 
 require (
 	github.com/Masterminds/semver v1.5.0
